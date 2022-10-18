@@ -15,3 +15,9 @@ python3 manage.py test # run all test files
 python3 manage.py test [file path e.g todo.test_forms] # run specific test file
 python3 manage.py test [file path].test[classname] # run specific test class
 python3 manage.py test [file path].test[class]name of def to run] #run specific test from file
+
+--coverage
+pip3 install coverage
+coverage run --source=todo manage.py test
+coverage html
+coverage report
